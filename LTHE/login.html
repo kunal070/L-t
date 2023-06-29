@@ -1,0 +1,93 @@
+<html lang="en">
+
+<head>
+  <title>LTHE</title>
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Montserrat" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-global fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">LTHE</a>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+
+</nav>
+
+  <nav class="navbar-primary">
+    <a href="#" class="btn-expand-collapse"><span class="glyphicon glyphicon-menu-left"></span></a>
+    <ul class="navbar-primary-menu">
+      <li>
+        <a href="index.html">
+          <div class="navbar-logo">
+            <img src="process/images/Home.jpg" alt="Logo" width="30" height="30">
+          </div>
+          <span class="nav-label">Home</span>
+        </a>
+      </li>
+
+      <li>
+        <a class="homeblack" href="aboutus.html">
+          <div class="navbar-logo">
+            <img src="process/images/about_us.png" alt="Logo" width="30" height="30">
+          </div>
+          <span class="nav-label">About Us</span>
+        </a>
+      </li>
+
+      <li>
+        <a class="homeblack" href="contact.html">
+          <div class="navbar-logo">
+            <img src="process/images/contact_us.jpg" alt="Logo" width="30" height="30">
+          </div>
+          <span class="nav-label">Contact Us</span>
+        </a>
+      </li>
+
+      <li>
+        <a class="homered" href="login.html">
+          <div class="navbar-logo">
+            <img src="process/images/login.jpg" alt="Logo" width="30" height="30">
+          </div>
+          <span class="nav-label">Login</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  
+  <div class="main-content">
+	<div class="loginbox">
+        <img src="assets/avatar.png" class="avatar">
+            <h1>Login Here</h1>
+            <form action="users/login.php" method="POST">
+                <p>Email</p>
+                <input type="text" name="mailuid" placeholder="Enter Email Address" required="required">
+                <p>Password</p>
+                <input type="password" name="pwd" placeholder="Enter Password" required="required">
+                <input type="submit" name="login-submit" value="Login">
+            </form>
+        </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+  <script>
+    $(document).ready(function() {
+      $('.btn-expand-collapse').click(function(e) {
+        e.preventDefault();
+        $('.navbar-primary').toggleClass('collapsed');
+        $('.main-content').toggleClass('collapsed');
+      });
+    });
+  </script>
+</body>
+
+</html>

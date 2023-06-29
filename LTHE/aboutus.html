@@ -1,0 +1,231 @@
+<html lang="en">
+
+<head>
+  <title>LTHE</title>
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Montserrat" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    .navbar-global {
+      background-color: indigo;
+    }
+
+    .navbar-global .navbar-brand {
+      color: white;
+    }
+
+    .navbar-global .navbar-user>li>a {
+      color: white;
+    }
+
+    .navbar-primary {
+      background-color: #333;
+      bottom: 0px;
+      left: 0px;
+      position: fixed;
+      top: 51px;
+      width: 200px;
+      z-index: 8;
+      overflow: hidden;
+      -webkit-transition: all 0.1s ease-in-out;
+      -moz-transition: all 0.1s ease-in-out;
+      transition: all 0.1s ease-in-out;
+    }
+
+    .navbar-primary.collapsed {
+      width: 60px;
+    }
+
+    .navbar-primary.collapsed .glyphicon {
+      font-size: 22px;
+    }
+
+    .navbar-primary.collapsed .nav-label {
+      display: none;
+    }
+
+    .btn-expand-collapse {
+      position: absolute;
+      display: block;
+      left: 0px;
+      bottom: 0;
+      width: 100%;
+      padding: 8px 0;
+      border-top: solid 1px #666;
+      color: grey;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .btn-expand-collapse:hover,
+    .btn-expand-collapse:focus {
+      background-color: #222;
+      color: white;
+    }
+
+    .btn-expand-collapse:active {
+      background-color: #111;
+    }
+
+    .navbar-primary-menu,
+    .navbar-primary-menu li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .navbar-primary-menu li a {
+      display: flex;
+      align-items: center;
+      padding: 10px 18px;
+      text-align: left;
+      border-bottom: solid 1px #444;
+      color: #ccc;
+    }
+
+    .navbar-primary-menu li a:hover {
+      background-color: #000;
+      text-decoration: none;
+      color: white;
+    }
+
+    .navbar-primary-menu li a .navbar-logo {
+      margin-right: 2px;
+    }
+
+    .navbar-primary-menu li a .navbar-logo img {
+      display: block;
+      width: 30px;
+      height: 30px;
+      margin-right: 5px;
+    }
+
+    .main-content {
+      margin-top: 60px;
+      margin-left: 200px;
+      padding: 20px;
+    }
+
+    .collapsed + .main-content {
+      margin-left: 60px;
+    }
+
+    .navbar-logo {
+      display: none;
+    }
+
+    .navbar-primary.collapsed .navbar-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 24px;
+      color: white;
+    }
+
+    .navbar-primary.collapsed .navbar-logo img {
+      display: block;
+      width: 30px;
+      height: 30px;
+      margin: 3px;
+    }
+
+    .homered{
+        background-color: red;
+        padding: 30px 10px 22px 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-global navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">LTHE</a>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  
+</nav>
+  <nav class="navbar-primary">
+    <a href="#" class="btn-expand-collapse"><span class="glyphicon glyphicon-menu-left"></span></a>
+    <ul class="navbar-primary-menu">
+      <li>
+        <a href="index.html">
+          <div class="navbar-logo">
+            <img src="process/images/Home.jpg" alt="Logo" width="30" height="30">
+          </div>
+          <span class="nav-label">Home</span>
+        </a>
+      </li>
+
+      <li>
+        <a class="homered" href="aboutus.html">
+          <div class="navbar-logo">
+            <img src="process/images/about_us.png" alt="Logo" width="30" height="30">
+          </div>
+          <span class="nav-label">About Us</span>
+        </a>
+      </li>
+
+      <li>
+        <a class="homeblack" href="contact.html">
+          <div class="navbar-logo">
+            <img src="process/images/contact_us.jpg" alt="Logo" width="30" height="30">
+          </div>
+          <span class="nav-label">Contact Us</span>
+        </a>
+      </li>
+
+      <li>
+        <a class="homeblack" href="login.html">
+          <div class="navbar-logo">
+            <img src="process/images/login.jpg" alt="Logo" width="30" height="30">
+          </div>
+          <span class="nav-label">Login</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <div class="main-content">
+	<p style="font-family: Montserrat ; text-align: center; font-size: 40px">Group Members</p>
+
+	<div style="float: left; width: 33%">
+    	
+    	<p style="text-align: center;"><img src="process/images/no.jpg" alt="Avatar" style="width:250px"></p>
+    	<h2 style="text-align: center; font-family:Montserrat ">Kunal Panchal</h2>
+    	
+	</div>
+
+	<div style="float: left; width: 33%">
+    	
+    	<p style="text-align: center;"><img src="process/images/test.jpg" alt="Avatar" style="width:250px"></p>
+    	<h2 style="text-align: center; font-family:Montserrat ">Ashish Madan</h2>
+    	
+	</div>
+
+	<div style="float: left; width: 33%">
+    	
+    	<p style="text-align: center;"><img src="process/images/no.jpg" alt="Avatar" style="width:250px"></p>
+    	<h2 style="text-align: center; font-family:Montserrat ">Darshan Patel</h2>
+    	
+	</div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.btn-expand-collapse').click(function(e) {
+        e.preventDefault();
+        $('.navbar-primary').toggleClass('collapsed');
+        $('.main-content').toggleClass('collapsed');
+      });
+    });
+  </script>
+</body>
+
+</html>

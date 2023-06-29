@@ -1,0 +1,246 @@
+
+.custom-option {
+  color: blue;
+  }
+
+  .container table {
+      border-collapse: collapse;
+      width: 100%;
+      border-top: none;
+  }
+
+  .container th, .container td {
+      padding: 8px;
+      border: 1px solid #fff;
+      border-top : none;
+  }
+
+  
+  .container table th:first-child,
+  .container table td:first-child {
+      border-top: none;
+  }
+
+  
+  .container table td:not(:first-child),
+  .container table th:not(:first-child) {
+      border-left: none;
+  }
+
+  .temp {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .temp button {
+      margin: 0 10px; /* Adjust the margin as needed */
+  }
+    
+  .hello table {
+      border-collapse: collapse;
+      width: 100%;
+  }
+
+  .hello th, td {
+      padding: 8px;
+      border: 1px solid #ddd;
+  }
+
+  .hello tr:not(:last-child) {
+      border-bottom: 1px solid #ddd;
+  }
+
+  .hello tr:first-child {
+      border-top: 1px solid #ddd;
+  }
+
+  .hello tr:first-child th {
+      border-top: none;
+  }
+
+  .hello tr:last-child {
+      border-bottom: none;
+  }
+
+  .hello tr td:first-child {
+      border-left: none;
+  }
+
+  .hello tr td:last-child {
+      border-right: none;
+  }
+
+  .hey th, .hey td {
+      padding: 8px;
+      border: 1px solid #ddd;
+      width: 100%;
+      table-layout: fixed;
+  }
+
+  .reset-button {
+      background-color: #ff0000;
+      color: #fff;
+      border: none;
+      padding: 6px 10px;
+      cursor: pointer;
+  }
+
+  .submit-button {
+      background-color: #ff0000;
+      color: #fff;
+      border: none;
+      padding: 6px 10px;
+      cursor: pointer;
+  }
+
+  .delete-button {
+      background-color: #ff0000;
+      color: #fff;
+      border: none;
+      padding: 6px 10px;
+      cursor: pointer;
+  }
+
+  select {
+      width: 100%;
+      padding: 7px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      margin-top: 5px;
+      margin-bottom: 5px;
+  }
+
+  .navbar-global {
+background-color: indigo;
+}
+
+.navbar-global .navbar-brand {
+color: white;
+}
+
+.navbar-global .navbar-user>li>a {
+color: white;
+}
+
+.navbar-primary {
+background-color: #333;
+bottom: 0px;
+left: 0px;
+position: fixed;
+top: 51px;
+width: 200px;
+z-index: 8;
+overflow: hidden;
+-webkit-transition: all 0.1s ease-in-out;
+-moz-transition: all 0.1s ease-in-out;
+transition: all 0.1s ease-in-out;
+}
+
+.navbar-primary.collapsed {
+width: 60px;
+}
+
+.navbar-primary.collapsed .glyphicon {
+font-size: 22px;
+}
+
+.navbar-primary.collapsed .nav-label {
+display: none;
+}
+
+.navbar-primary-menu li a {
+text-decoration: none;
+}
+
+.btn-expand-collapse {
+position: absolute;
+display: block;
+left: 0px;
+bottom: 0;
+width: 100%;
+padding: 8px 0;
+border-top: solid 1px #666;
+color: grey;
+font-size: 20px;
+text-align: center;
+}
+
+.btn-expand-collapse:hover,
+.btn-expand-collapse:focus {
+background-color: #222;
+color: white;
+}
+
+.btn-expand-collapse:active {
+background-color: #111;
+}
+
+.navbar-primary-menu,
+.navbar-primary-menu li {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+.navbar-primary-menu li a {
+display: flex;
+align-items: center;
+padding: 10px 18px;
+text-align: left;
+border-bottom: solid 1px #444;
+color: #ccc;
+}
+
+.navbar-primary-menu li a:hover {
+background-color: #000;
+text-decoration: none;
+color: white;
+}
+
+.navbar-primary-menu li a .navbar-logo {
+margin-right: 10px;
+}
+
+.navbar-primary-menu li a .navbar-logo img {
+display: block;
+width: 30px;
+height: 30px;
+margin-right: 5px;
+}
+
+.main-content {
+margin-top: 60px;
+margin-left: 200px;
+padding: 20px;
+}
+
+.collapsed + .main-content {
+margin-left: 60px;
+}
+
+.navbar-logo {
+display: none;
+}
+
+.navbar-primary.collapsed .navbar-logo {
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+height: 24px;
+color: white;
+}
+
+.navbar-primary.collapsed .navbar-logo img {
+display: block;
+width: 30px;
+height: 30px;
+margin: 5px;
+}
+
+.homered{
+  background-color: red;
+  padding: 30px 10px 22px 10px;
+}
